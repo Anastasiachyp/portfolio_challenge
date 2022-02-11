@@ -26,10 +26,10 @@ class Projects extends Component {
     });
 
     return (
-      <Container>
+      <div>
         <h1 id="projects-header">My Projects</h1>
-        <Grid>{projectsList}</Grid>
-      </Container>
+        <div>{projectsList}</div>
+      </div>
     );
   }
 }
