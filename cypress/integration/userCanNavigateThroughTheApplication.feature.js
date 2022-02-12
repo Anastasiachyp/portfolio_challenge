@@ -42,7 +42,7 @@ describe("User can navigate the app", () => {
       cy.get("#about-header").should("not.exist");
     });
 
-    it("does not display Hello World", () => {
+    it("does not display Welcome to my portfolio", () => {
       cy.get("#hello").should("not.exist");
     });
   });
@@ -52,7 +52,7 @@ describe("User can navigate the app", () => {
       cy.get("#header").click();
     });
 
-    it("displays Hello World", () => {
+    it("displays Welcome to my portfolio", () => {
       cy.get("#hello").should("contain", "Hello");
     });
 
