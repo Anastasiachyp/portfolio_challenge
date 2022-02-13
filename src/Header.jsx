@@ -4,28 +4,39 @@ import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Segment inverted>
-      <Menu inverted secondary>
-        <Menu.Item
-          id="header"
-          name="my portfolio"
-          as={Link}
-          to={{ pathname: "/" }}
-        />
-        <Menu.Item
-          id="about-tab"
-          name="about me"
-          as={NavLink}
-          to={{ pathname: "/about" }}
-        />
-        <Menu.Item
-          id="projects-tab"
-          name="my portfolio"
-          as={NavLink}
-          to={{ pathname: "/projects" }}
-        />
-      </Menu>
-    </Segment>
+    <nav id="navbar" className="ui fixed inverted menu">
+      <div className="ui container">
+        <Link id="header" className="header item" to="/">
+          My Portfolio
+        </Link>
+        <div className="right menu">
+          <NavLink
+            id="about-tab"
+            className="ui item"
+            activeStyle={{ frontWeight: "bold" }}
+            to="/about"
+          >
+            About Me
+          </NavLink>
+          <NavLink
+            id="projects-tab"
+            className="ui item"
+            activateStyle={{ frontWeight: "bold" }}
+            to="/projects"
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            id="contact-tab"
+            className="ui item"
+            activateStyle={{ frontWeight: "bold" }}
+            to="/contact"
+          >
+            Contact
+          </NavLink>
+        </div>
+      </div>
+    </nav>
   );
 };
 

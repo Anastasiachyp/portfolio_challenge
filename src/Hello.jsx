@@ -4,7 +4,7 @@ import { Container } from "semantic-ui-react";
 const Hello = () => {
   return (
     <Container>
-      <div id="hello">Welcome to my portfolio!</div>
+      <h1 id="hello">Welcome to my portfolio!</h1>
     </Container>
   );
 };
