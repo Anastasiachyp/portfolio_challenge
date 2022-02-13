@@ -4,7 +4,8 @@ import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav id="navbar" className="ui fixed inverted menu">
+    <nav id="navbar"
+      className="ui fixed inverted menu">
       <div className="ui container">
         <Link id="header" className="my portfolio" to="/">
           My Portfolio
@@ -20,19 +21,27 @@ const Header = () => {
           </NavLink>
           <NavLink
             id="projects-tab"
-            className="ui item"
+            className="my projects"
             activateStyle={{ frontWeight: "bold" }}
             to="/projects"
           >
-            Projects
+            My Projects
           </NavLink>
           <NavLink
             id="contact-tab"
-            className="ui item"
+            className="contact"
             activateStyle={{ frontWeight: "bold" }}
             to="/contact"
           >
             Contact
+          </NavLink>
+          <NavLink
+            id="cv-tab"
+            className="CV"
+            activateStyle={{ frontWeight: "bold" }}
+            to="/CV"
+          >
+            My CV
           </NavLink>
         </div>
       </div>

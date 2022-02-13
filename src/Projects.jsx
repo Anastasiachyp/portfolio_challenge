@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grid } from "semantic-ui-react";
+import { Container, Grid, Header } from "semantic-ui-react";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
 
@@ -19,10 +19,10 @@ const Projects = () => {
       setProjects(response.data);
     });
   }, []);
-  
+
     return (
       <Container>
-        <h1 id="projects-header">My Projects</h1>
+          <Header as="h1" id="projects-header">My Projects</Header>
         <Grid>{projectsList}</Grid>
       </Container>
     );
