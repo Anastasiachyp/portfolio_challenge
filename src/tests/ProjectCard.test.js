@@ -3,10 +3,10 @@ import ProjectCard from "../ProjectCard";
 import { render, screen } from "@testing-library/react";
 
 const project = {
-  id: 1,
-  name: "My First Website",
-  image: "http://www.4president.us/websites/2000w/gore2000home.gif",
-  description: "This was my first project",
+  "id": 1,
+  "name": "My First Website",
+  "image": "http://www.4president.us/websites/2000w/gore2000home.gif",
+  "description": "This was my first project",
 };
 
 describe("ProjectCard.jsx", () => {
@@ -20,5 +20,9 @@ describe("ProjectCard.jsx", () => {
     
   it('is expected to display the description of the project', () => {
     expect(screen.getByText('This was my first project')).toBeVisible();
+  });
+    
+  it('is expected to display image of project', () => {
+    expect(screen.getByAltText('My Test Website image')).toBeVisible();
   });
 });

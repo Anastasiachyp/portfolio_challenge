@@ -6,13 +6,13 @@ const Header = () => {
   return (
     <nav id="navbar" className="ui fixed inverted menu">
       <div className="ui container">
-        <Link id="header" className="header item" to="/">
+        <Link id="header" className="my portfolio" to="/">
           My Portfolio
         </Link>
         <div className="right menu">
           <NavLink
             id="about-tab"
-            className="ui item"
+            className="about me"
             activeStyle={{ frontWeight: "bold" }}
             to="/about"
           >
