@@ -15,10 +15,10 @@ describe("User can see list of projects", () => {
   it("displays the second project", () => {
     cy.get("#project-2").within(() => {
       cy.get(".image").should("exist");
-      cy.get(".header").should("contain", "UI Design");
+      cy.get(".header").should("contain", "FizzBuzz");
       cy.get(".description").should(
         "contain",
-        "Designing user interfaces is fun. I want to learn more about that..."
+        "The FizzBuzz problem is a classic test given in coding interviews. The task is simple: Print integers 1 to N, but print “Fizz” if an integer is divisible by 3, “Buzz” if an integer is divisible by 5, and “FizzBuzz” if an integer is divisible by both 3 and 5."
       );
     });
   });

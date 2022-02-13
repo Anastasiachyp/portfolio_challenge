@@ -17,4 +17,8 @@ describe("ProjectCard.jsx", () => {
   it("is expected to display project cards", () => {
     expect(screen.getByText("My First Website")).toBeVisible();
   });
+    
+  it('is expected to display the description of the project', () => {
+    expect(screen.getByText('This was my first project')).toBeVisible();
+  });
 });
