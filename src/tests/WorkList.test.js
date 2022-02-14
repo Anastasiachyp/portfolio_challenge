@@ -5,9 +5,9 @@ import "@testing-library/jest-dom";
 
 const work = {
   id: 1,
-  company: "OFYR",
-  jobtitle: "Digital Marketing Assistant",
-  period: "2020 - 2021"
+  company: "Amazon",
+  position: "CEO",
+  period: "2019-2022",
 };
 
 describe("WorkList.jsx", () => {
@@ -16,7 +16,6 @@ describe("WorkList.jsx", () => {
   });
 
   it("is expected to display correct mock data", () => {
-    expect(screen.getByText("Most Amazing Company Ever")).toBeInTheDocument();
+    expect(screen.getByText("Amazon")).toBeInTheDocument();
   });
 });
-

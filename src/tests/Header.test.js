@@ -1,30 +1,33 @@
 import React from "react";
-import Header from "../Header";
 import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import HeaderComponent from "../Header";
 import { BrowserRouter } from "react-router-dom";
 
 describe("Header.jsx", () => {
   beforeEach(() => {
     render(
-      <BroserRouter>
-        <Header />
-      </BroserRouter>
+      <BrowserRouter>
+        <HeaderComponent fullName={"FakeFullName"} />
+      </BrowserRouter>
     );
   });
 
-  it('is expected to display "My Portfolio"', () => {
-    expect(screen.getByText("My Portfolio")).toBeVisible();
+  it("is expected to dispaly FakeFullName in the Header", () => {
+    expect(
+      screen.getByText("Welcome to Portfolio of FakeFullName")
+    ).toBeInTheDocument();
   });
 
-  it('is expected to display "About Me"', () => {
-    expect(screen.getByText("About Me")), toBeVisible();
+  it("is expected to dispaly About Me menu item", () => {
+    expect(screen.getByText("About Me")).toBeInTheDocument();
   });
 
-  it('is expected to be displayed "My Projects"', () => {
-    expect(screen.getByText("My Projects")).toBeVisible();
+  it("is expected to dispaly CV menu item", () => {
+    expect(screen.getByText("CV")).toBeInTheDocument();
   });
-    
-  it('is expected to display "CV" menu item', () => {
-    expect(screen.getByText('CV')).toBeVisible();
+
+  it("is expected to dispaly My Projects menu item", () => {
+    expect(screen.getByText("My Projects")).toBeInTheDocument();
   });
 });
