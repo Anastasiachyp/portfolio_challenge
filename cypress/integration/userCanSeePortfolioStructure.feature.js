@@ -6,6 +6,6 @@ describe("Portfolio interface", () => {
     cy.get("#about-tab").should("contain", "About Me");
     cy.get("#cv-tab").should("contain", "CV");
     cy.get("#projects-tab").should("contain", "My Portfolio");
-    cy.get("#footer").should("contain", "`Made with React ${React.version}`");
+    cy.get("#footer").should("contain", `Made with React ${React.version}`);
   });
 });

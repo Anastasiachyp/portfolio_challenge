@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "institution": "IULM University",
+      "programm": "Bachelor's degree, Marketing",
+      "period": "2017-2020"
+    },
+    {
+      "id": 2,
+      "institution": "Craft Academy",
+      "programm": "Certificate of Junior developer",
+      "period": "2022"
+    }
+  ]

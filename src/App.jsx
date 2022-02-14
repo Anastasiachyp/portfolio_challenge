@@ -9,6 +9,7 @@ import { Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <>
+      <HeaderComponent fullName={"Anastasiya Chypyha"} />
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/cv" element={<CV />} />

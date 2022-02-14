@@ -1,34 +1,32 @@
 import React from "react";
 import { Menu, Segment, Header } from "semantic-ui-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
-const HeaderComponent = () => {
+const HeaderComponent = ({ fullName }) => {
   return (
     <Segment inverted>
-      <Header inverted textAlign="center" color="olive">
-        Welcome to my portfolio!
+      <Header inverted textAlign="center">
+        Welcome to portfolio of {fullName}
       </Header>
       <Menu secondary inverted>
+        <Menu.Item
+          id="header"
+          name="my portfolio"
+          as={Link}
+          to={{ pathname: "/" }}
+        />
         <Menu.Item
           id="about-tab"
           name="about me"
           as={NavLink}
           to={{ pathname: "/about" }}
-          color="olive"
         />
-        <Menu.Item
-          id="cv-tab"
-          name="CV"
-          as={NavLink}
-          to={{ pathname: "/cv" }}
-          color="olive"
-        />
+        <Menu.Item id="cv-tab" name="CV" as={NavLink} to={{ pathname: "/cv" }} />
         <Menu.Item
           id="projects-tab"
-          name="my projects"
+          name="my portfolio"
           as={NavLink}
           to={{ pathname: "/projects" }}
-          color="olive"
         />
       </Menu>
     </Segment>
