@@ -42,13 +42,13 @@ const CV = () => {
 
       <Grid columns={2} relaxed="very">
         <Grid.Column>
-          <Header as="h2" subheader id="education">
+          <Header as="h2" id="education">
             Education
           </Header>
           <List>{educationList}</List>
         </Grid.Column>
         <Grid.Column>
-          <Header as="h2" subheader id="work">
+          <Header as="h2" id="work">
             Work Experience
           </Header>
           <List>{workList}</List>

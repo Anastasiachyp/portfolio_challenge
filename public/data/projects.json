@@ -2,19 +2,19 @@
     {
         "id": 1,
         "name": "My First Website",
-        "image": "http://www.4president.us/websites/2000w/gore2000home.gif",
+        "image": "https://media.giphy.com/media/Sg4DwEJrCpGIU/giphy-downsized-large.gif",
         "description": "This was my first project. The guy lost, but won the popular vote!"
     },
     {
         "id": 2,
         "name": "FizzBuzz",
-        "image": "https://i.ytimg.com/vi/WtJsf2mevvQ/maxresdefault.jpg",
+        "image": "https://media.giphy.com/media/LVjJhHQXasrfi/giphy.gif",
         "description": "The FizzBuzz problem is a classic test given in coding interviews. The task is simple: Print integers 1 to N, but print “Fizz” if an integer is divisible by 3, “Buzz” if an integer is divisible by 5, and “FizzBuzz” if an integer is divisible by both 3 and 5."
     },
     {
         "id": 3,
         "name": "ATM Challenge",
-        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.facebook.com%2F2287673364866031&psig=AOvVaw3oeOBv6JMweuBvLZ0ry-AD&ust=1644853254695000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIj8voSC_fUCFQAAAAAdAAAAABAD",
+        "image": "https://media.giphy.com/media/3oEjHI8WJv4x6UPDB6/giphy.gif",
         "description": "We designed an ATM machine with real life case scenarios and appropriate response."
     }
 ]
